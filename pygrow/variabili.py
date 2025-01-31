@@ -20,3 +20,6 @@ pinMoisture1 = 34
 pinMoisture2 = 35
 
 pinDS18 = 54354
+
+pinBME280_scl = 42
+pinBME280_sda = 43

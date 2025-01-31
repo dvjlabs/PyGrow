@@ -3,6 +3,7 @@
 import moisture
 import sensor_dht11
 import sensor_ds18
+import sensor_bme280
 
 # Import necessary modules
 import asyncio
@@ -19,6 +20,7 @@ class PyGrow:
         self.sens_hum1 = 0#moisture.setup(pinMoisture1)
         self.sens_hum2 = 0#moisture.setup(pinMoisture2)
         self.sens_ds18 = 0#sensor_ds18.setup(pinDS18)
+        self.sens_bme280 = 0#sensor_bme280.setup(pinBME280_scl, pinBME280_sda)
     
         self.dht11_value = (0,0)
         self.hum1_value = 0

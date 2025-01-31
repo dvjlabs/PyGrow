@@ -71,14 +71,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 <br>
 <br>
 
+<div class="w3-panel">
+<h2 style="border-bottom:2px black solid">Coltura 1</h2>
 <div class="w3-row"> <!-- START ROW -->
-
-<div class="w3-third w3-container">
-<div class="w3-card-4 w3-pale-blue w3-padding w3-margin">
-<p>TEMPERATURA DELL'ARIA<br>(BME280)</p>
-<p class="w3-text-red">BME280TEMP &ordm;C</p>
-</div> 
-</div>
 
 <div class="w3-third w3-container">
 <div class="w3-card-4 w3-pale-green w3-padding w3-margin">
@@ -88,20 +83,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 </div>
 
 <div class="w3-third w3-container">
-<div class="w3-card-4 w3-pale-yellow w3-padding w3-margin">
-<p>UMIDITA' DEL SUOLO 2<br>(moisture)</p>
-<p class="w3-text-red">SUOLO2 %</p>
+<div class="w3-card-4 w3-pale-green w3-padding w3-margin">
+<p>TEMPERATURA DELL'ACQUA 1<br>(DS18)</p>
+<p class="w3-text-red">TEMP1 &ordm;C</p>
 </div> 
 </div>
 
 </div> <!-- END ROW -->
+</div>
 
+<div class="w3-panel">
+<h2 style="border-bottom:2px black solid">Coltura 2</h2>
 <div class="w3-row"> <!-- START ROW -->
 
 <div class="w3-third w3-container">
-<div class="w3-card-4 w3-pale-green w3-padding w3-margin">
-<p>TEMPERATURA DELL'ACQUA 1<br>(DS18)</p>
-<p class="w3-text-red">TEMP1 &ordm;C</p>
+<div class="w3-card-4 w3-pale-yellow w3-padding w3-margin">
+<p>UMIDITA' DEL SUOLO 2<br>(moisture)</p>
+<p class="w3-text-red">SUOLO2 %</p>
 </div> 
 </div>
 
@@ -112,40 +110,29 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 </div> 
 </div>
 
-<div class="w3-third w3-container">
-<div class="w3-card-4 w3-pale-blue w3-padding w3-margin">
-<p>PRESSIONE DELL'ARIA<br>(BME280)</p>
-<p class="w3-text-red">BME280PRESS hPA</p>
-</div> 
+</div> <!-- END ROW -->
 </div>
 
-</div> <!-- END ROW -->
-
+<div class="w3-panel">
+<h2 style="border-bottom:2px black solid">Ambiente</h2>
 <div class="w3-row"> <!-- START ROW -->
 
-<div class="w3-third w3-container">
+<div class="w3-half w3-container">
 <div class="w3-card-4 w3-pale-blue w3-padding w3-margin">
-<p>TEMPERATURA DELL'ARIA<br>(DHT11)</p>
-<p class="w3-text-red">DHT11TEMP &ordm;C</p>
+<p>TEMPERATURA e PRESSIONE dell'ARIA<br>(BME280)</p>
+<p class="w3-text-red">BME280TEMP &ordm;C ; BME280PRESS hPA</p>
 </div> 
 </div>
 
-<div class="w3-third w3-container">
+<div class="w3-half w3-container">
 <div class="w3-card-4 w3-pale-blue w3-padding w3-margin">
-<p>UMIDITA' DELL'ARIA<br>(DHT11)</p>
-<p class="w3-text-red">DHT11HUM &ordm;C</p>
-</div> 
-</div>
-
-<div class="w3-third w3-container">
-<div class="w3-card-4 w3-pale-red w3-padding w3-margin">
-<p>QUALITA' DELL'ARIA<br>(interna)</p>
-<p class="w3-text-red">OTTIMA</p>
+<p>TEMPERATURA e UMIDITA' dell'ARIA<br>(DHT11)</p>
+<p class="w3-text-red">DHT11TEMP &ordm;C ; DHT11HUM %</p>
 </div> 
 </div>
 
 </div> <!-- END ROW -->
-
+</div>
 
 <footer class="w3-container w3-blue w3-center" style="position:absolute;width:100%;bottom:0px;">
 <p>

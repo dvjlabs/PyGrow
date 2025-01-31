@@ -11,6 +11,7 @@ import socket
 import time
 
 import random
+from variabili import *
 
 # class
 class PyGrow:
@@ -36,10 +37,10 @@ class PyGrow:
         
         while True:
             # Add other tasks that you might need to do in the loop
+            self.measure()
             await asyncio.sleep(60)
             print('60 seconds passed: sensors measuring...')
-            self.measure()
-
+            
 
     def run(self):
         # Create an Event Loop
@@ -103,17 +104,17 @@ class PyGrow:
     
     def measure(self):
         self.dht11_value = random.randint(1,30),random.randint(1,30)
-        #self.dht11_value = self.sens_dht11.measure()
+        #self.dht11_value = sensor_dht11.measure(self.sens_dht11)
         
         self.hum1_value = random.randint(1,30)
-        #self.hum1_value = self.sens_hum1.measure()
+        #self.hum1_value = moisture.measure(self.sens_hum1)
         
         self.hum2_value = random.randint(1,30)
-        #self.hum2_value = self.sens_hum2.measure()
+        #self.hum2_value = moisture.measure(self.sens_hum2)
         
         self.ds18_value = random.randint(1,30),random.randint(1,30)
-        #self.ds18_value = self.sens_ds18.measure()
+        #self.ds18_value = sensor_ds18.measure(self.sens_ds18)
         
         self.bme280_value = random.randint(1,30),random.randint(1,30)
-        #self.bme280_value = self.sens_bme280.measure()
+        #self.bme280_value = sensor_bme280.measure(self.sens_bme280)
         return
